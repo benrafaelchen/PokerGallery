@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="../js/setting.js"></script>
+    <title>The Poker Game - Purchase</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Poker Game Gallery</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="/img/home-icon.png" alt="Home" title="Home"
+            /></a>
+          </li>
+          <li>
+            <a href="gallery.html"
+              ><img src="/img/gallery-icon.png" alt="Gallery" title="Gallery"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html"
+              ><img
+                src="/img/purchase-icon.png"
+                alt="Purchase"
+                title="Purchase"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <ul>
+          <li>
+            <form id="purchaseForm" action="/process_purchase" method="post">
+              <label for="productName">Product Name</label>
+              <select id="productName" name="productName" required>
+                <option value="Royal-Flush" data-price="50">
+                  Ben Rafael Chen - ROYAL FLASH ($50)
+                </option>
+                <option value="Straight-Flush" data-price="45">
+                  Lior Shushan - STRAIGHT FLUSH ($45)
+                </option>
+                <option value="Four-of-a-kind" data-price="40">
+                  Ofir Binder - FOUR OF KIND ($40)
+                </option>
+                <option value="Full-house" data-price="35">
+                  Elad Atias - FULL HOUSE ($35)
+                </option>
+                <option value="Flush" data-price="30">
+                  Tania Orenstein - FLUSH ($30)
+                </option>
+                <option value="Straight" data-price="25">
+                  Moataz Morshed - STRAIGHT ($25)
+                </option>
+                <option value="three-of-a-kind" data-price="20">
+                  Elias Khoury - THREE OF KIND ($20)
+                </option>
+                <option value="two-pair" data-price="15">
+                  Roni Lifshitz - TWO PAIR ($15)
+                </option>
+                <option value="pair" data-price="10">
+                  Ben Gertz - PAIR ($10)
+                </option>
+                <option value="high-card" data-price="5">
+                  Saleh Khatib - HIGH CARD ($5)
+                </option>
+              </select>
+
+              <label for="quantity">Quantity</label>
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                placeholder="Choose Minimum 1"
+                required
+              />
+
+              <label for="totalPrice">Total Price</label>
+              <input
+                type="text"
+                id="totalPrice"
+                name="totalPrice"
+                readonly
+                value="$0"
+                class="green-text"
+              />
+
+              <label for="paymentMethod">Payment Method</label>
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="American Express">American Express</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+              </select>
+
+              <label for="cardNumber">Credit Card No.</label>
+              <input
+                type="text"
+                id="cardNumber"
+                name="cardNumber"
+                placeholder="XXXX-XXXX-XXXX-XXXX"
+                pattern="\d{4}-\d{4}-\d{4}-\d{4}"
+                required
+              />
+
+              <label for="expiryDate">Expiry Date</label>
+              <input
+                type="text"
+                id="expiryDate"
+                name="expiryDate"
+                placeholder="MM/YYYY"
+                pattern="(0[1-9]|1[0-2])\/[0-9]{4}"
+                required
+              />
+
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                id="cvv"
+                name="cvv"
+                placeholder="XXX"
+                pattern="\d{3}"
+                required
+              />
+
+              <button type="submit">Purchase</button>
+            </form>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Created in 2024 by Ben Rafael Chen</p>
+    </footer>
+  </body>
+</html>

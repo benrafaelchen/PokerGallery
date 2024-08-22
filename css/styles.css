@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: "Arvo", serif;
+  font: bolder;
+  background-image: url("../img/poker-cover.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1px;
+  font-size: xx-large;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px;
+}
+h1 {
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+}
+
+h2 {
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+  font-size: 35px;
+}
+
+section {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+}
+
+form {
+  max-width: 600px;
+  margin: auto; /* Center the form horizontally */
+  display: grid;
+  align-items: center;
+  text-align: left;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+  font-size: 22px;
+}
+
+p {
+  align-items: center;
+  text-align: left;
+  font-family: "Arvo", serif;
+  font-size: 17px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+}
+
+footer p:last-child {
+  text-align: center;
+  font-size: small;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+  text-align: left;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+  align-items: center;
+  font-size: small;
+  text-align: left;
+}
+
+img {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px black;
+  align-items: auto;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: rotate(10deg) scale(1);
+}
+
+.name {
+  display: none;
+  width: auto;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px black;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold; /* Make labels bold for emphasis */
+  margin-bottom: 4px;
+  max-width: 100%; /* Set max-width for labels */
+}
+
+button {
+  background-color: rgb(118, 190, 216);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgb(95, 161, 185);
+}
+
+input,
+select,
+button {
+  max-width: auto;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0 auto;
+}
+
+.success-message {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.green-text {
+  color: green;
+  font-weight: bold;
+}
